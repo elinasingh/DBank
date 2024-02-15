@@ -5,7 +5,13 @@ actor DBank {
   currentValue := 100;
 
   let id = 234567897653344;
+  //Debug.print(debug_show(id));
 
-  Debug.print(debug_show(currentValue));
-  Debug.print(debug_show(id));
+  func topUp() {
+    currentValue += 1;
+
+    Debug.print(debug_show(currentValue));
+  };
+
+  topUp();
 }
