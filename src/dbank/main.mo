@@ -1,8 +1,12 @@
 import Debug "mo:base/Debug";
+import Time "mo:base/Time";
 
 actor DBank {
   stable var currentValue: Nat = 300;
   // currentValue := 100;
+
+  let startTime = Time.now();
+  Debug.print(debug_show(startTime));
 
   let id = 234567897653344;
   // Debug.print(debug_show(id));
