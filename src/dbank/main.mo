@@ -7,7 +7,7 @@ actor DBank {
    // currentValue := 300;
 
   stable var startTime = Time.now();
-  // startTime := Time.now();
+   // startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   let id = 234567897653344;
@@ -18,7 +18,7 @@ actor DBank {
     Debug.print(debug_show(currentValue));
   };
 
-  public func withdrawl(amount: Float) {
+  public func withdraw(amount: Float) {
     let tempValue: Float = currentValue - amount;
     if (tempValue - amount >= 0) {
       currentValue -= amount;
